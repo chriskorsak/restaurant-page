@@ -1,30 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-#content {
-  max-width: 1200px;
+:root {
+  --primary-color: #2240be;
+  --secondary-color: #dce0e1;
+  --teriary-color: green;
+}
+
+body {
+  font-size: 17px;
+}
+
+.container {
+  max-width: 1100px;
   margin: auto;
 }
 
 header {
+  margin: 1rem 0rem;
   text-align: center;
+  /* display: flex; */
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
 }
 
-ul#nav-links {
-  width: 30%;
-  margin: auto;
+h1 {
+  font-family: 'Tangerine', cursive;
+  padding-top: 1rem;
+}
+
+nav ul {
   display: flex;
-  justify-content: space-around;
+  position: relative;
+  bottom: -1px;
 
 }
 
-ul#nav-links li {
+nav li {
   list-style: none;
-  background-color: aqua;
-  padding: 1rem 1rem 0 1rem;
-  flex: 1;
+  color: var(--primary-color);
 }
 
+nav li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #fff;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-bottom: 1px solid #fff;
+}
+
+@media screen and (min-width: 400px) {
+  h1 {
+    font-size: 5rem;
+  }
+  nav {
+    max-width: 30%;
+    margin: auto;
+  }
+  nav li {
+    padding: 1rem 1rem 0 1rem;
+    flex: 1;
+  }
+  
+  
+}
