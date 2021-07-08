@@ -2,6 +2,9 @@ import { UI } from './index.js'
 
 function loadHomeContent(e) {
   e.preventDefault();
+  UI.navLinkTab(e.target);
+
+
   //content is appended to this element on all pages
   const contentMain = document.getElementById('content');
   //clear out content from contentMain

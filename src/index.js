@@ -19,6 +19,11 @@ class UI {
     element.appendChild(document.createTextNode(text));
     parentElement.appendChild(element);
   }
+  static navLinkTab(target) {
+    const lis = document.querySelectorAll('nav li');
+    lis.forEach(li => li.classList.remove('active'));
+    target.parentElement.className = 'active';
+  }
   
 }
 
