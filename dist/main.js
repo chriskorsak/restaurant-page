@@ -1,1 +1,1 @@
-console.log("Is this thing working?"),alert(1),alert(2);
+console.log("Is this thing working?");

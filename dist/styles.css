@@ -1,28 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 
+/* global styles */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* border: solid black 1px; */
 }
 
 :root {
   --primary-color: #2240be;
-  --secondary-color: #dce0e1;
-  --teriary-color: green;
+  --secondary-color: #ececec;
+  --teriary-color: rgb(155, 19, 19);
 }
 
 body {
   font-size: 17px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-.container {
-  max-width: 1100px;
-  margin: auto;
-}
+/* header and nav section */
 
 header {
-  margin: 1rem 0rem;
+  margin: 1.5rem 0rem;
   text-align: center;
   /* display: flex; */
   justify-content: space-between;
@@ -31,21 +32,31 @@ header {
   border-bottom: 1px solid var(--primary-color);
 }
 
-h1 {
+h1#title {
   font-family: 'Tangerine', cursive;
+  letter-spacing: .3rem;
   padding-top: 1rem;
+  font-size: 4rem;
 }
+
+h2#tagline {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
 
 nav ul {
   display: flex;
   position: relative;
-  bottom: -1px;
-
+  bottom: -2px;
+  display: flex;
 }
 
 nav li {
+  padding: .5rem 1rem;
   list-style: none;
   color: var(--primary-color);
+  flex: 1;
 }
 
 nav li > a {
@@ -58,20 +69,45 @@ nav li > a {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
   border-bottom: 1px solid #fff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
-@media screen and (min-width: 400px) {
+/* main content section */
+#content {
+  max-width: 1100px;
+  min-height: 100vh;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  margin: 1rem;
+}
+
+
+/* footer */
+footer {
+  padding: 1rem;
+  text-align: center;
+  /* display: flex; */
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+
+}
+
+/* media query for screens larger than min width listed */
+@media screen and (min-width: 600px) {
   h1 {
-    font-size: 5rem;
+    font-size: 6rem;
   }
   nav {
     max-width: 30%;
     margin: auto;
-  }
-  nav li {
-    padding: 1rem 1rem 0 1rem;
-    flex: 1;
-  }
-  
+  }  
   
 }
