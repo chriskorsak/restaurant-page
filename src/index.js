@@ -13,3 +13,14 @@ function loadEvents() {
 //run loadEvents function when DOM loaded
 document.addEventListener('DOMContentLoaded', loadEvents);
 
+class UI {
+  textElement(tag, text, parentElement) {
+    const element = document.createElement(`${tag}`);
+    element.appendChild(document.createTextNode(text));
+    parentElement.appendChild(element);
+  }
+  
+}
+
+export { UI }
+
