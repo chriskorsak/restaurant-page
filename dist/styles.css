@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Tangerine:wght@700&display=swap');
 
 /* global styles */
 
@@ -12,18 +12,18 @@
 :root {
   --primary-color: #2240be;
   --secondary-color: #ececec;
-  --teriary-color: rgb(155, 19, 19);
+  --accent-color: rgb(155, 19, 19);
 }
 
 body {
   font-size: 17px;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* header and nav section */
 
 header {
-  margin: 1.5rem 0rem;
+  margin: 0 0 1.5rem 0rem;
   text-align: center;
   /* display: flex; */
   justify-content: space-between;
@@ -36,7 +36,7 @@ h1#title {
   font-family: 'Tangerine', cursive;
   letter-spacing: .3rem;
   padding-top: 1rem;
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
 h2#tagline {
@@ -76,7 +76,6 @@ nav li > a {
 /* main content section */
 #content {
   max-width: 1100px;
-  min-height: 100vh;
   margin: auto;
 }
 
@@ -94,7 +93,7 @@ footer {
   padding: 1rem;
   text-align: center;
   /* display: flex; */
-  justify-content: space-between;
+  /* justify-content: space-between; */
   background-color: var(--secondary-color);
   color: var(--primary-color);
 
@@ -102,7 +101,7 @@ footer {
 
 /* media query for screens larger than min width listed */
 @media screen and (min-width: 600px) {
-  h1 {
+  h1#title {
     font-size: 6rem;
   }
   nav {
