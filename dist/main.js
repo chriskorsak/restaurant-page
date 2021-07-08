@@ -1,1 +1,1 @@
-console.log("Is this thing working?");
+(()=>{"use strict";function n(){console.log("home button working.")}function t(){console.log("Menu button working.")}function e(){console.log("Contact button working.")}document.addEventListener("DOMContentLoaded",(function(){document.getElementById("home").addEventListener("click",n),document.getElementById("menu").addEventListener("click",t),document.getElementById("contact").addEventListener("click",e)}))})();
