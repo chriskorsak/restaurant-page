@@ -11,7 +11,11 @@ function loadEvents() {
 }
 
 //run loadEvents function when DOM loaded
-document.addEventListener('DOMContentLoaded', loadEvents);
+document.addEventListener('DOMContentLoaded', function(e) {
+  loadEvents();
+  loadHomeContent(e);
+});
+
 
 class UI {
   textElement(tag, text, parentElement) {
