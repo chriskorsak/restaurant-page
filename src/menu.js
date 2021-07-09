@@ -2,6 +2,7 @@ import { UI } from "./index.js"
 
 function loadMenuContent(e) {
   e.preventDefault();
+  //event delegation for nav link style
   UI.navLinkTab(e.target);
 
   //content is appended to this element on all pages
@@ -10,8 +11,8 @@ function loadMenuContent(e) {
   contentMain.innerHTML = '';
 
   //create paragraph with copy
-  const ui = new UI();
-  ui.textElement('p', 'Menu goes here.', contentMain);
+  const uiMenuHeading = new UI();
+  uiMenuHeading.textElement('h2', 'Menu', contentMain);
 }
 
 export { loadMenuContent }

@@ -2,6 +2,7 @@ import { UI } from './index.js'
 
 function loadHomeContent(e) {
   e.preventDefault();
+  //event delegation for nav link style
   UI.navLinkTab(e.target);
 
 
