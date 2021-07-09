@@ -28,6 +28,23 @@ class UI {
     lis.forEach(li => li.classList.remove('active'));
     target.parentElement.className = 'active';
   }
+  item(item, menuSection) {
+    const menuItemDiv = document.createElement('div');
+    menuItemDiv.className = 'menu-item'
+    const rowDiv = document.createElement('div');
+    rowDiv.className = 'menu-row';
+    const title = document.createElement('h4');
+    const price = document.createElement('div');
+    const description = document.createElement('div');
+  
+    title.textContent = item.title;
+    description.textContent = item.description;
+    price.textContent = item.price;
+    
+    rowDiv.append(title, price);
+    menuItemDiv.append(rowDiv, description);
+    menuSection.appendChild(menuItemDiv);
+  }
   
 }
 

@@ -94,7 +94,7 @@ iframe {
   border: 1px solid var(--primary-color);
 }
 
-p {
+#content p {
   margin: 1rem;
 }
 
@@ -113,14 +113,28 @@ a[href^="tel"] {
   font-size: 1.3rem;
 }
 
+/* menu styles */
+.menu-item {
+  margin: 1rem;
+}
+.menu-row {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 /* footer */
 footer {
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  margin-top: 1rem;
+  margin-top: 2rem;
+}
+
+footer > * {
+  opacity: .8;
+  padding: .2rem;
 }
 
 /* media query for screens larger than min width listed */
@@ -131,6 +145,9 @@ footer {
   nav {
     max-width: 30%;
     margin: auto;
-  }  
+  }
+  .menu-section {
+    max-width: 50%;
+  }
   
 }
