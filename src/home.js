@@ -14,7 +14,7 @@ function loadHomeContent(e) {
 
   //create hero img for page
   const heroImg = document.createElement('img');
-  heroImg.setAttribute('src', 'images/hero.jpg');
+  heroImg.setAttribute('src', 'images/hero-1.jpg');
   heroImg.setAttribute('alt', 'Plate of Thai food');
   heroImg.className = 'hero';
   contentMain.appendChild(heroImg);
