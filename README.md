@@ -15,12 +15,6 @@ Additionally, all photography in this project is my own from previous food photo
 
 <img src="dist/images/restaurant-page.jpg">
 
-### Features
-* Display of total books in library and total books read/unread
-* Add new books using a form (title, author, pages, and read-status)
-* Ability to change book read-status after adding to library
-* Ability to delete a book from library
-
 ## Setup/Installation Requirements
 
 * Clone this repository
